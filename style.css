@@ -1,0 +1,177 @@
+/* =========================================================
+   AI VIRTUAL FASHION STUDIO - PREMIUM UI
+   ========================================================= */
+
+body {
+    background:
+        radial-gradient(circle at 10% 10%, rgba(255, 120, 180, 0.16), transparent 30%),
+        radial-gradient(circle at 90% 20%, rgba(120, 150, 255, 0.16), transparent 30%),
+        linear-gradient(135deg, #080812, #111124 55%, #0b0b16);
+}
+
+/* Main application */
+.gradio-container {
+    max-width: 1450px !important;
+    margin: auto !important;
+    padding: 25px !important;
+}
+
+/* Hero section */
+.hero-card {
+    padding: 45px;
+    border-radius: 28px;
+    margin-bottom: 25px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.10),
+            rgba(255, 255, 255, 0.03)
+        );
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(18px);
+    animation: heroFade 0.8s ease;
+}
+
+.hero-title {
+    font-size: 48px !important;
+    font-weight: 800 !important;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #ff66b3, #9b7cff, #5ed7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 19px !important;
+    opacity: 0.85;
+}
+
+/* Feature cards */
+.feature-card {
+    padding: 25px;
+    min-height: 150px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(255, 120, 190, 0.55);
+    box-shadow: 0 15px 40px rgba(255, 80, 170, 0.16);
+}
+
+/* Buttons */
+button {
+    border-radius: 14px !important;
+    transition: all 0.25s ease !important;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Main generate button */
+#generate-btn {
+    min-height: 58px;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    background: linear-gradient(
+        90deg,
+        #ff4fa3,
+        #8d6cff,
+        #4cc9ff
+    ) !important;
+    border: none !important;
+    box-shadow: 0 12px 30px rgba(180, 90, 255, 0.28);
+}
+
+/* Tabs */
+button[role="tab"] {
+    border-radius: 12px !important;
+    margin: 4px !important;
+    transition: all 0.25s ease !important;
+}
+
+button[role="tab"]:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Input boxes */
+input,
+textarea,
+select {
+    border-radius: 12px !important;
+}
+
+/* Output cards */
+.output-card {
+    border-radius: 22px;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+/* Section headings */
+.section-title {
+    font-size: 25px !important;
+    font-weight: 750 !important;
+}
+
+/* Pipeline cards */
+.pipeline-step {
+    text-align: center;
+    padding: 18px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Animation */
+@keyframes heroFade {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .gradio-container {
+        padding: 12px !important;
+    }
+
+    .hero-card {
+        padding: 25px;
+    }
+
+    .hero-title {
+        font-size: 34px !important;
+    }
+
+    .hero-subtitle {
+        font-size: 16px !important;
+    }
+}
