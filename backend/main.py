@@ -40,6 +40,8 @@ app.add_middleware(
         "http://127.0.0.1:5177",
         "http://localhost:5178",
         "http://127.0.0.1:5178",
+        "https://ai-virtual-fashion-studio.vercel.app",
+        "https://ai-virtual-fashion-studio-ghb9dj539-byte-busters6.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
