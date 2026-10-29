@@ -73,11 +73,10 @@ function App() {
         );
       }
 
-      setResultImage(
-        result.output_url
-          ? `${API_URL}${result.output_url}`
-          : `${API_URL}/outputs/${result.output_filename}`
-      );
+     const imagePath =
+  result.output_url || `/outputs/${result.output_filename}`;
+
+setResultImage(new URL(imagePath, `${API_URL}/`).href);
     } catch (err) {
       console.error("AURA try-on error:", err);
       setError(
