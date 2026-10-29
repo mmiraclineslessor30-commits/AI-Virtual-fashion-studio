@@ -2,7 +2,10 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8001";
+const API_URL = (
+  import.meta.env.VITE_API_URL ||
+  "https://aura-fashion-backend-lr0h.onrender.com"
+).replace(/\/$/, "");
 
 function App() {
   const [personFile, setPersonFile] = useState(null);
